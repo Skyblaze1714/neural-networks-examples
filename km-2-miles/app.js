@@ -14,8 +14,6 @@ net.train([{input: [1/50],    output: [1/31.0686]},
 var output = net.run([1/8]);  // [0.987]
 
 //map the value for output
-output = output.map((result) => {
-  return 1/result;
-});
+output = output.map((result) => { return 1/result; });
 
 console.log(output);
